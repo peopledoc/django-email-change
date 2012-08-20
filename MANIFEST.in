@@ -1,0 +1,11 @@
+include AUTHORS
+include INSTALL
+include LICENSE
+include NOTICE
+include README
+include MANIFEST.in
+include requirements.txt
+include setup.cfg
+include setup.py
+recursive-include src/email_change *.py *.json *.mo *.po *.html
+graft docs

@@ -1,11 +1,10 @@
-django-email-change
-========================================================================
 
-| **Author**: `George Notaras <http://www.g-loaded.eu/>`_
-| **Development Web Site**: `django-email-change project <http://www.codetrax.org/projects/django-email-change>`_
-| **Source Code Repository**: `django-email-change source code <https://source.codetrax.org/hgroot/django-email-change>`_
-| **Documentation**: `django-email-change documentation <http://packages.python.org/django-email-change>`_
-| **Downloads**: `django-email-change releases <http://pypi.python.org/pypi/django-email-change>`_
+============
+Introduction
+============
+
+This section contains an introduction to *django-email-change*, including general
+information about how to submit bug reports and make feature requests.
 
 django-email-change adds support for email address change and confirmation.
 

@@ -1,0 +1,20 @@
+This product includes software developed at:
+
+* CodeTRAX (http://www.codetrax.org/)
+* G-Loaded Journal (http://www.g-loaded.eu/)
+
+Copyright 2010 George Notaras <gnot [at] g-loaded.eu>
+
+Brand names include, but are not limited to:
+
+* django-email-change
+* email_change
+* CodeTRAX
+* G-Loaded Journal
+
+The aforementioned names must not appear in the names of products derived from
+this software without prior written permission of George Notaras.
+
+For license information, please read the LICENSE file.
+
+Django is a registered trademark of the Django Software Foundation.
