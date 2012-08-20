@@ -25,13 +25,13 @@
 #
 
 from django.conf.urls.defaults import *
-from django.views.generic.simple import direct_to_template
+from django.views.generic import TemplateView
 
 
 urlpatterns = patterns('',
     url(r'^email/change/$', 'email_change.views.email_change_view', name='email_change'),
     url(r'^email/verification/sent/$',
-        direct_to_template, {'template': 'email_change/email_verification_sent.html'},
+        TemplateView.as_view(template_name='email_change/email_verification_sent.html'),
         name='email_verification_sent'),
     # Note taken from django-registration
     # Verification keys get matched by \w+ instead of the more specific
@@ -40,6 +40,6 @@ urlpatterns = patterns('',
     # confusing 404.
     url(r'^email/verify/(?P<verification_key>\w+)/$', 'email_change.views.email_verify_view', name='email_verify'),
     url(r'^email/change/complete/$',
-        direct_to_template, {'template': 'email_change/email_change_complete.html'},
+        TemplateView.as_view(template_name='email_change/email_change_complete.html'),
         name='email_change_complete'),
 )
