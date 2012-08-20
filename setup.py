@@ -67,7 +67,7 @@ if __name__=='__main__':
         maintainer_email = 'gnot [at] g-loaded.eu',
         url = 'http://www.codetrax.org/projects/django-email-change',
         description = 'django-email-change adds support for email address change and confirmation.',
-        long_description = read('README'),
+        long_description = read('README.rst'),
         download_url = 'https://source.codetrax.org/hgroot/django-email-change',
         platforms=['any'],
         classifiers = [
