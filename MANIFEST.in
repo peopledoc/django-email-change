@@ -2,7 +2,7 @@ include AUTHORS
 include INSTALL
 include LICENSE
 include NOTICE
-include README
+include README.rst
 include MANIFEST.in
 include requirements.txt
 include setup.cfg
