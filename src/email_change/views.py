@@ -24,6 +24,7 @@
 #  limitations under the License.
 #
 
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response, redirect
 from django.db.models.loading import cache
@@ -50,14 +51,18 @@ def email_change_view(request, extra_context={},
         if form.is_valid():
             
             EmailChangeRequest = cache.get_model('email_change', 'EmailChangeRequest')
-            Site = cache.get_model('sites', 'Site')
             
             email = form.cleaned_data.get('email')
             verification_key = generate_key(request.user, email)
             
-            current_site = Site.objects.get_current()
-            site_name = current_site.name
-            domain = current_site.domain
+            site_name = getattr(settings, 'SITE_NAME', 'Please define settings.SITE_NAME')
+            domain = getattr(settings, 'SITE_URL', None)
+
+            if domain is None:
+                Site = cache.get_model('sites', 'Site')
+                current_site = Site.objects.get_current()
+                site_name = current_site.name
+                domain = current_site.domain
             
             protocol = 'http'
             if request.is_secure():
