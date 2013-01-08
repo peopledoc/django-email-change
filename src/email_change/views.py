@@ -37,20 +37,20 @@ from email_change.utils import generate_key
 
 
 @login_required
-def email_change_view(
-    request, extra_context={},
-    success_url='email_verification_sent',
-    template_name='email_change/email_change_form.html',
-    email_message_template_name='email_change/emails/verification_email_message.html',
-    email_subject_template_name='email_change/emails/verification_email_subject.html'):
+def email_change_view(request, extra_context={},
+                      success_url='email_verification_sent',
+                      template_name='email_change/email_change_form.html',
+                      email_message_template_name='email_change/emails/verification_email_message.html',
+                      email_subject_template_name='email_change/emails/verification_email_subject.html',
+                      form_class=EmailChangeForm):
     """Allow a user to change the email address associated with the
     user account.
 
     """
     if request.method == 'POST':
-        form = EmailChangeForm(username=request.user.username,
-                               data=request.POST,
-                               files=request.FILES)
+        form = form_class(username=request.user.username,
+                          data=request.POST,
+                          files=request.FILES)
         if form.is_valid():
             EmailChangeRequest = cache.get_model('email_change',
                                                  'EmailChangeRequest')
@@ -108,7 +108,7 @@ def email_change_view(
             return redirect(success_url)
 
     else:
-        form = EmailChangeForm(username=request.user.username)
+        form = form_class(username=request.user.username)
 
     context = RequestContext(request, extra_context)
     context['form'] = form
