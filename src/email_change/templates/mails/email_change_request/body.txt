@@ -1,0 +1,3 @@
+{% load assign %}
+{% assign name="base" %}mails/body.txt{% endassign %}
+{% include 'mails/email_change_request/mail_content.txt' %}

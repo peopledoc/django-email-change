@@ -1,0 +1,1 @@
+{% load i18n %}{% autoescape off %}{% blocktrans %}[{{ site_name }}] Confirm your PostBox email address{% endblocktrans %}{% endautoescape %}

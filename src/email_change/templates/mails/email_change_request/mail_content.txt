@@ -1,0 +1,21 @@
+{% extends base %}
+{% load i18n %}
+{% block subject %}
+   {% blocktrans %}[{{ site_name }}] Confirm your email address{% endblocktrans %}
+{% endblock %}
+
+{% block title %}
+   {% blocktrans %}
+       Confirm your email address
+   {% endblocktrans %}
+{% endblock %}
+
+{% block message %}
+{% blocktrans with owner_title=email_request.user.get_title_display owner_name=email_request.user.last_name %}{{ owner_title }} {{ owner_name }},{% endblocktrans %}
+
+{% trans 'You changed your PostBox email address.' %}
+
+{% trans 'Please click on the link below to activate your new email address:' %}
+
+{{ activation_url }}
+{% endblock %}
