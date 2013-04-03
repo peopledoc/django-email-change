@@ -1,14 +1,25 @@
 Changelog
 =========
 
-1.0 (unreleased)
+0.3 (2013-04-03)
 ----------------
 
- - django-mail-factory integration
- - Registration email validation supports
+* French translation
+* django-mail-factory integration
+* Registration email validation supports
+* Add resend and cancel email request error
+* Add Changelog and Version
+* Fixes novagile/postbox#546 - email_verify shouldn't use login_required
+* Add mail_factory + email request on user creation
+* PEP-8 + settings.SUPPORT_EMAIL
+* Make django-email-change compliant with settings.SITE_NAME and settings.SITE_URL
+* Use templateview instead of direct_to_template
+* Fix setup.py
+* Fix manifest
+* README in RestructuredText
 
 
 0.2.2 (2011-02-23)
 ----------------
 
-Forked version from https://pypi.python.org/pypi/django-email-change
+* Forked version from https://pypi.python.org/pypi/django-email-change
