@@ -77,7 +77,6 @@ def email_change_view(request, extra_context={},
     return render_to_response(template_name, context_instance=context)
 
 
-@login_required
 def email_verify_view(request, verification_key, extra_context={},
                       success_url='email_change_complete',
                       template_name='email_change/email_verify.html'):
@@ -85,8 +84,7 @@ def email_verify_view(request, verification_key, extra_context={},
     """
     context = RequestContext(request, extra_context)
     try:
-        ecr = EmailChangeRequest.objects.get(
-            user=request.user, verification_key=verification_key)
+        ecr = EmailChangeRequest.objects.get(verification_key=verification_key)
     except EmailChangeRequest.DoesNotExist:
         # Return failure response
         return render_to_response(template_name, context_instance=context)
@@ -98,8 +96,8 @@ def email_verify_view(request, verification_key, extra_context={},
             return render_to_response(template_name, context_instance=context)
 
         # Success. Replace the user's email with the new email
-        request.user.email = ecr.email
-        request.user.save()
+        ecr.user.email = ecr.email
+        ecr.user.save()
 
         # Delete the email change request
         ecr.delete()
