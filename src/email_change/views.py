@@ -111,7 +111,7 @@ def email_verification_resend(request, pk):
     email_request = get_object_or_404(
         EmailChangeRequest.objects.filter(user=request.user), pk=pk)
     email_request.send()
-    messages.success(_('Email change request has been resent.'))
+    messages.success(request, _('Email change request has been resent.'))
     return redirect('vault:index')
 
 
@@ -120,5 +120,5 @@ def email_verification_cancel(request, pk):
     email_request = get_object_or_404(
         EmailChangeRequest.objects.filter(user=request.user), pk=pk)
     email_request.delete()
-    messages.success(_('Email change request has been cancelled.'))
+    messages.success(request, _('Email change request has been cancelled.'))
     return redirect('vault:index')
