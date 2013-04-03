@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-03 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Email change request has been resent."
+msgstr ""
+
+msgid "Email change request has been cancelled."
+msgstr ""
+
+msgid "Email change complete"
+msgstr ""
+
+msgid "Notice"
+msgstr ""
+
+msgid "Your email address has been changed successfully."
+msgstr ""
+
+msgid "Your new email address is:"
+msgstr ""
+
+msgid "Back to your profile"
+msgstr ""
+
+msgid "Change email address"
+msgstr ""
+
+msgid "Your current email address is:"
+msgstr ""
+
+msgid ""
+"To associate a new email address with your account, please enter the new "
+"address in the box below."
+msgstr ""
+
+msgid "Verification email sent"
+msgstr ""
+
+msgid ""
+"An email containing a verification link has been sent to your new email "
+"address."
+msgstr ""
+
+msgid ""
+"Follow the instructions in this email in order to successfully change your "
+"current email address."
+msgstr ""
+
+msgid "Email confirmation"
+msgstr ""
+
+msgid "Email confirmation failed"
+msgstr ""
+
+msgid "This confirmation code has either expired or is invalid."
+msgstr ""
+
+msgid "The requested email address change has failed."
+msgstr ""
+
+msgid "Please, try to change it again in your account settings."
+msgstr ""
+
+msgid "Hi"
+msgstr ""
+
+#, python-format
+msgid ""
+"A request to change the email address of your account has been made at "
+"%(site_name)s."
+msgstr ""
+
+msgid ""
+"Before changing your current email address, verification of your new email "
+"address is required."
+msgstr ""
+
+msgid ""
+"To complete the email change, please visit the following URL, either by "
+"clicking on it or by copying and pasting it in your browser:"
+msgstr ""
+
+msgid "You will only need to visit this URL once."
+msgstr ""
+
+msgid "Thank you"
+msgstr ""
+
+#, python-format
+msgid "The Team at %(site_name)s"
+msgstr ""
+
+#, python-format
+msgid "Email change verification for %(site_name)s"
+msgstr ""
+
+#, python-format
+msgid "[%(site_name)s] Confirm your email address"
+msgstr ""
+
+msgid ""
+"\n"
+"       Confirm your email address\n"
+"   "
+msgstr ""
+
+#, python-format
+msgid "%(owner_title)s %(owner_name)s,"
+msgstr ""
+
+msgid "You changed your PostBox email address."
+msgstr ""
+
+msgid "Please click on the link below to activate your new email address:"
+msgstr ""
+
+#, python-format
+msgid "[%(site_name)s] Confirm your PostBox email address"
+msgstr ""
