@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-03 13:45+0200\n"
+"POT-Creation-Date: 2013-04-03 14:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,117 +20,134 @@ msgstr ""
 
 msgid "Email change request has been resent."
 msgstr ""
+"L'email de confirmation de votre modification vous a été envoyé à nouveau."
 
 msgid "Email change request has been cancelled."
-msgstr ""
+msgstr "Votre demande de modification d'adresse e-mail a été annulée."
 
 msgid "Email change complete"
-msgstr ""
+msgstr "Votre adresse e-mail a été modifiée."
 
 msgid "Notice"
-msgstr ""
+msgstr "Notice"
 
 msgid "Your email address has been changed successfully."
-msgstr ""
+msgstr "Votre adresse e-mail a été modifée avec succès."
 
 msgid "Your new email address is:"
-msgstr ""
+msgstr "Votre nouvelle adresse email est :"
 
 msgid "Back to your profile"
-msgstr ""
+msgstr "Retour au profil"
 
 msgid "Change email address"
-msgstr ""
+msgstr "Modifier mon adresse e-mail"
 
 msgid "Your current email address is:"
-msgstr ""
+msgstr "Votre adresse actuelle est :"
 
 msgid ""
 "To associate a new email address with your account, please enter the new "
 "address in the box below."
-msgstr ""
+msgstr "Saississez votr nouvelle adresse email."
 
 msgid "Verification email sent"
-msgstr ""
+msgstr "L'e-mail de vérification a été envoyé"
 
 msgid ""
 "An email containing a verification link has been sent to your new email "
 "address."
 msgstr ""
+"Un email contenant un lien d'activation vous a été envoyé sur votre nouvelle "
+"adresse e-mail."
 
 msgid ""
 "Follow the instructions in this email in order to successfully change your "
 "current email address."
 msgstr ""
+"Cliquez sur le lien de confirmation dans le mail afin de confirmer votre "
+"modification."
 
 msgid "Email confirmation"
-msgstr ""
+msgstr "Confirmation de votre adresse e-mail"
 
 msgid "Email confirmation failed"
-msgstr ""
+msgstr "Êchec de la confirmation de votre adresse e-mail"
 
 msgid "This confirmation code has either expired or is invalid."
-msgstr ""
+msgstr "Ce code de confirmation a expiré ou est invalide."
 
 msgid "The requested email address change has failed."
-msgstr ""
+msgstr "La modification de votre adresse n'a pu être prise en compte."
 
 msgid "Please, try to change it again in your account settings."
-msgstr ""
+msgstr "Merci de réessayer."
 
 msgid "Hi"
-msgstr ""
+msgstr "Bonjour"
 
 #, python-format
 msgid ""
 "A request to change the email address of your account has been made at "
 "%(site_name)s."
 msgstr ""
+"Une demande de modification de votre adresse e-mail a été enregistrée sur "
+"%(site_name)s."
 
 msgid ""
 "Before changing your current email address, verification of your new email "
 "address is required."
 msgstr ""
+"Avant de prendre en compte cette modification, une confirmation de votre "
+"part est requise."
 
 msgid ""
 "To complete the email change, please visit the following URL, either by "
 "clicking on it or by copying and pasting it in your browser:"
 msgstr ""
+"Pour terminer la procédure de modification, merci de cliquer sur le lien "
+"suivant :"
 
 msgid "You will only need to visit this URL once."
-msgstr ""
+msgstr "Vous ne devez suivre ce lien une seule et unique fois."
 
 msgid "Thank you"
-msgstr ""
+msgstr "Merci"
 
 #, python-format
 msgid "The Team at %(site_name)s"
-msgstr ""
+msgstr "L'équipe de %(site_name)s"
 
 #, python-format
 msgid "Email change verification for %(site_name)s"
 msgstr ""
+"Vérification de la modification de votre adresse email sur %(site_name)s"
 
 #, python-format
 msgid "[%(site_name)s] Confirm your email address"
-msgstr ""
+msgstr "[%(site_name)s] Confirmez votre adresse e-mail"
 
 msgid ""
 "\n"
 "       Confirm your email address\n"
 "   "
 msgstr ""
+"\n"
+"       Confirmez votre adresse e-mail\n"
+"   "
 
 #, python-format
 msgid "%(owner_title)s %(owner_name)s,"
-msgstr ""
+msgstr "%(owner_title)s %(owner_name)s,"
 
 msgid "You changed your PostBox email address."
-msgstr ""
+msgstr "Vous avez demandé à modifier votre email PostBox."
 
 msgid "Please click on the link below to activate your new email address:"
 msgstr ""
+"Merci de cliquer sur le lien ci-dessous pour activer votre nouvelle adresse "
+"e-mail :"
 
 #, python-format
 msgid "[%(site_name)s] Confirm your PostBox email address"
-msgstr ""
+msgstr "[%(site_name)s] Confirmez votre adresse e-mail PostBox"
