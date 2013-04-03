@@ -1,0 +1,14 @@
+Changelog
+=========
+
+1.0 (unreleased)
+----------------
+
+ - django-mail-factory integration
+ - Registration email validation supports
+
+
+0.2.2 (2011-02-23)
+----------------
+
+Forked version from https://pypi.python.org/pypi/django-email-change
