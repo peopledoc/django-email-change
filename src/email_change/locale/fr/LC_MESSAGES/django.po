@@ -49,7 +49,7 @@ msgstr "Votre adresse actuelle est :"
 msgid ""
 "To associate a new email address with your account, please enter the new "
 "address in the box below."
-msgstr "Saississez votr nouvelle adresse email."
+msgstr "Saississez votre nouvelle adresse email."
 
 msgid "Verification email sent"
 msgstr "L'e-mail de vérification a été envoyé"
