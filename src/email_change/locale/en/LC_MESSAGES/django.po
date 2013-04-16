@@ -3,14 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-03 14:05+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-04-16 15:07+0200\n"
+"PO-Revision-Date: 2013-04-16 05:51-0300\n"
+"Last-Translator: Laurene Dureault <laurenedureault@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -18,13 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Email change request has been resent."
-msgstr ""
+msgstr "Email confirmation of your modification has been resent "
 
 msgid "Email change request has been cancelled."
-msgstr ""
+msgstr "Request for e-mail modification  has been canceled."
 
 msgid "Email change complete"
-msgstr ""
+msgstr "Your e-mail address was changed"
 
 msgid "Notice"
 msgstr ""
@@ -39,7 +38,7 @@ msgid "Back to your profile"
 msgstr ""
 
 msgid "Change email address"
-msgstr ""
+msgstr "Change my email address"
 
 msgid "Your current email address is:"
 msgstr ""
@@ -47,15 +46,17 @@ msgstr ""
 msgid ""
 "To associate a new email address with your account, please enter the new "
 "address in the box below."
-msgstr ""
+msgstr "Enter your new email address"
 
 msgid "Verification email sent"
-msgstr ""
+msgstr "Verification email has been sent"
 
 msgid ""
 "An email containing a verification link has been sent to your new email "
 "address."
 msgstr ""
+"An email containing an activation link has been sent to your new email "
+"address."
 
 msgid ""
 "Follow the instructions in this email in order to successfully change your "
@@ -75,7 +76,7 @@ msgid "The requested email address change has failed."
 msgstr ""
 
 msgid "Please, try to change it again in your account settings."
-msgstr ""
+msgstr "Please, try again. Thank you."
 
 msgid "Hi"
 msgstr ""
@@ -97,14 +98,14 @@ msgid ""
 msgstr ""
 
 msgid "You will only need to visit this URL once."
-msgstr ""
+msgstr "You will need to visit this URL only once"
 
 msgid "Thank you"
 msgstr ""
 
 #, python-format
 msgid "The Team at %(site_name)s"
-msgstr ""
+msgstr "The Team of %(site_name)s"
 
 #, python-format
 msgid "Email change verification for %(site_name)s"
@@ -125,7 +126,7 @@ msgid "%(owner_title)s %(owner_name)s,"
 msgstr ""
 
 msgid "You changed your PostBox email address."
-msgstr ""
+msgstr "You have requested to modify your PostBox email address."
 
 msgid "Please click on the link below to activate your new email address:"
 msgstr ""
