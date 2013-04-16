@@ -117,7 +117,7 @@ msgstr "Das %(site_name)s Team"
 
 #, python-format
 msgid "Email change verification for %(site_name)s"
-msgstr "Überprüfen Sie bitte Ihre E-Mail-Adresse auf% (site_name)s"
+msgstr "Überprüfen Sie bitte Ihre E-Mail-Adresse auf %(site_name)s"
 
 #, python-format
 msgid "[%(site_name)s] Confirm your email address"
