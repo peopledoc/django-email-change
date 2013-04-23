@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
-from mail_factory import factory
-from postbox.core.mails import BaseMailHeader, BaseMailForm
-
+from django import forms
 from django.conf import settings
 from django.core.urlresolvers import reverse_lazy as reverse
+from django.contrib.auth import get_user_model
+
+from mail_factory import factory
 import uuid
+from postbox.core.mails import BaseMailHeader, BaseMailForm
+
+from email_change.models import EmailChangeRequest
 
 
 class EmailChangeRequestMail(BaseMailHeader):
@@ -19,9 +23,22 @@ def activation_url():
 
 
 class EmailChangeRequestForm(BaseMailForm):
-    class Meta:
-        mail_class = EmailChangeRequestMail
-        initial = {'email_request': 1,
-                   'activation_url': activation_url}
+    """Here, there is no inputs, all data is provided by get_context_data()."""
+    def __init__(self, *args, **kwargs):
+        if 'mail_class' in kwargs:
+            self.mail_class = kwargs.pop('mail_class')
+        forms.Form.__init__(self, *args, **kwargs)
+
+    def get_context_data(self):
+        User = get_user_model()
+        user = User(username=u'johndoe',
+                    first_name=u'John',
+                    last_name=u'Doe',
+                    title=u'Mr')
+        email_request = EmailChangeRequest(user=user, email=user.email)
+        url = activation_url()
+        return {'email_request': email_request,
+                'activation_url': url}
+
 
 factory.register(EmailChangeRequestMail, EmailChangeRequestForm)
