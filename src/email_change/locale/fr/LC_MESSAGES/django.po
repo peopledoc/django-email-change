@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-25 19:42+0200\n"
+"POT-Creation-Date: 2013-04-26 23:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,7 @@ msgstr ""
 
 #, python-format
 msgid "[%(site_name)s] Confirm your email address"
-msgstr "[%(site_name)s] Confirmez votre adresse e-mail"
+msgstr "[%(site_name)s] Vaidation de votre adresse email"
 
 msgid ""
 "\n"
@@ -141,12 +141,10 @@ msgid "%(owner_title)s %(owner_name)s,"
 msgstr "%(owner_title)s %(owner_name)s,"
 
 msgid "You changed your PostBox email address."
-msgstr "Vous avez demandé à modifier votre email PostBox."
+msgstr "Vous avez modifié votre adresse email dans PostBox."
 
 msgid "Please click on the link below to activate your new email address:"
-msgstr ""
-"Merci de cliquer sur le lien ci-dessous pour activer votre nouvelle adresse "
-"e-mail :"
+msgstr "Merci de cliquer sur le lien ci-dessous pour la valider :"
 
 #, python-format
 msgid "[%(site_name)s] Confirm your PostBox email address"
