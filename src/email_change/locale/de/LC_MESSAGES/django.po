@@ -134,11 +134,11 @@ msgid "%(owner_title)s %(owner_name)s,"
 msgstr "%(owner_title)s %(owner_name)s,"
 
 msgid "You changed your PostBox email address."
-msgstr "Sie haben angefordert, Ihre PostBox E-Mail zu ändern."
+msgstr "Sie haben Ihre E-Mail PostBox geändert."
 
 msgid "Please click on the link below to activate your new email address:"
 msgstr ""
-"Bitte klicken Sie auf den Link, um Ihre neue E-Mail Adresse zu aktivieren:"
+"Bitte klicken Sie auf den Link, um Ihre neue E-Mail-Adresse zu bestätigen:"
 
 #, python-format
 msgid "[%(site_name)s] Confirm your PostBox email address"
