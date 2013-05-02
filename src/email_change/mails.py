@@ -34,7 +34,7 @@ class EmailChangeRequestForm(BaseMailForm):
         user = User(username=u'johndoe',
                     first_name=u'John',
                     last_name=u'Doe',
-                    title=u'Mr')
+                    title=u'MR')
         email_request = EmailChangeRequest(user=user, email=user.email)
         url = activation_url()
         return {'email_request': email_request,
