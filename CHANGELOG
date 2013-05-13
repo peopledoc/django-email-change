@@ -1,12 +1,15 @@
 Changelog
 =========
 
+0.5 (unreleased)
+----------------
+
+
 0.4 (2013-05-13)
 ----------------
 
 * Remove deprecated, use hashlib
-* Update German translations
-
+* Update translations
 
 
 0.3 (2013-04-03)
