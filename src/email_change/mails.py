@@ -24,12 +24,15 @@ def activation_url():
 
 class EmailChangeRequestForm(BaseMailForm):
     """Here, there is no inputs, all data is provided by get_context_data()."""
+    email_request = forms.ModelChoiceField(queryset=EmailChangeRequest.objects.all())
+    activation_url = forms.URLField()
+
     def __init__(self, *args, **kwargs):
         if 'mail_class' in kwargs:
             self.mail_class = kwargs.pop('mail_class')
         forms.Form.__init__(self, *args, **kwargs)
 
-    def get_context_data(self):
+    def get_preview_data(self):
         User = get_user_model()
         user = User(username=u'johndoe',
                     first_name=u'John',
