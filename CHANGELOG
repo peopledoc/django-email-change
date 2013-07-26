@@ -4,6 +4,8 @@ Changelog
 0.5 (unreleased)
 ----------------
 
+* Updated to django-mail-factory 0.7.
+
 
 0.4 (2013-05-13)
 ----------------
