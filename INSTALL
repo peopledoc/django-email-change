@@ -38,7 +38,7 @@ the *Python Package Index* (PyPI).
 Alternatively, you can clone the project's public source code repository
 and then check-out any stable release, all of which are tagged::
 
-    git clone git://github.com/novagile/django-email-change.git
+    git clone git://github.com/novapost/django-email-change.git
 
 Install
 =======
