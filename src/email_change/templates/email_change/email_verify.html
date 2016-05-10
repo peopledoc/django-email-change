@@ -18,7 +18,7 @@
         <p>{% trans "This confirmation code has either expired or is invalid." %}</p>
         <p>{% trans "The requested email address change has failed." %}</p>
         <p>{% trans "Please, try to change it again in your account settings." %}</p>
-        <p>&laquo; <a href="{% url profiles_profile_detail user.username %}">{% trans "Back to your profile" %}</a></p>
+        <p>&laquo; <a href="{% url 'profiles_profile_detail' user.username %}">{% trans "Back to your profile" %}</a></p>
     </div>
 {% endblock %}
 
