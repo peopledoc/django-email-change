@@ -29,11 +29,14 @@ from datetime import timedelta
 from django.db import models
 from django.utils.timezone import now
 
-from email_change import settings
+from django.conf import settings
+
+
+EMAIL_CHANGE_VERIFICATION_DAYS = getattr(settings, 'EMAIL_CHANGE_VERIFICATION_DAYS', 7)
 
 
 class EmailChangeRequest(models.Model):
-    user = models.OneToOneField('auth.User',  related_name='%(class)s_user')
+    user = models.OneToOneField(settings.AUTH_USER_MODEL,  related_name='%(class)s_user')
     verification_key = models.CharField(max_length=40)
     email = models.EmailField(max_length=75)  # Contains the new email address
     date_created = models.DateTimeField(auto_now_add=True)
@@ -47,6 +50,6 @@ class EmailChangeRequest(models.Model):
                                    self.email)
 
     def has_expired(self):
-        dt = timedelta(days=settings.EMAIL_CHANGE_VERIFICATION_DAYS)
+        dt = timedelta(days=EMAIL_CHANGE_VERIFICATION_DAYS)
         expiration_date = self.date_created + dt
         return expiration_date <= now()
