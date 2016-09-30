@@ -1,3 +1,6 @@
+**WARNING: this project is not maintained**
+
+
 django-email-change
 ========================================================================
 
