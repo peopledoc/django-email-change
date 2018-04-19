@@ -22,7 +22,7 @@
             {{ form.as_p }}
             <p><label>&nbsp;</label><input type="submit" value="{% trans "Change email address" %}" /></p>
         </form>
-        <p>&laquo; <a href="{% url profiles_profile_detail user.username %}">{% trans "Back to your profile" %}</a></p>
+        <p>&laquo; <a href="{% url 'profiles_profile_detail' user.username %}">{% trans "Back to your profile" %}</a></p>
         <script type="text/javascript">
             document.getElementById('id_email').focus()
         </script>

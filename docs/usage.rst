@@ -12,5 +12,5 @@ The email change form link
 
 To display the link to the email change form, you can use the following code::
 
-    <a href="{% url email_change %}">Change email</a>
+    <a href="{% url 'email_change' %}">Change email</a>
 

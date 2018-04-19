@@ -31,15 +31,14 @@ from django.db import models
 from django.utils.timezone import now
 from django.core.urlresolvers import reverse_lazy as reverse
 
-from mail_factory import factory
+from django.conf import settings
 
-from email_change.settings import EMAIL_CHANGE_VERIFICATION_DAYS
-from email_change.utils import generate_key
+
+EMAIL_CHANGE_VERIFICATION_DAYS = getattr(settings, 'EMAIL_CHANGE_VERIFICATION_DAYS', 7)
 
 
 class EmailChangeRequest(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL,
-                             related_name='%(class)s_user')
+    user = models.OneToOneField(settings.AUTH_USER_MODEL,  related_name='%(class)s_user')
     verification_key = models.CharField(max_length=40)
     email = models.EmailField(max_length=75)  # Contains the new email address
     date_created = models.DateTimeField(auto_now_add=True)
@@ -61,11 +60,6 @@ class EmailChangeRequest(models.Model):
         return self.email == self.user.email
 
     def has_expired(self):
-        """Return the status of the change request.
-        Has expired:
-            - if the expiration_date is passed and
-            - if it is not a creation_request
-        """
         dt = timedelta(days=EMAIL_CHANGE_VERIFICATION_DAYS)
         expiration_date = self.date_created + dt
         return expiration_date <= now() and not self.is_creation_request()

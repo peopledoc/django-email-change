@@ -28,7 +28,6 @@ import random
 import hashlib
 from django.contrib.auth.tokens import default_token_generator
 
-
 def generate_key(user, email):
     """Generates and returns unique keys.
     

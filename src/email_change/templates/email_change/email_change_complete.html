@@ -18,7 +18,7 @@
         <p>{% trans "Your email address has been changed successfully." %}</p>
         <p>{% trans "Your new email address is:" %}</p>
         <blockquote>{{ user.email }}</blockquote>
-        <p>&laquo; <a href="{% url profiles_profile_detail user.username %}">{% trans "Back to your profile" %}</a></p>
+        <p>&laquo; <a href="{% url 'profiles_profile_detail' user.username %}">{% trans "Back to your profile" %}</a></p>
     </div>
 {% endblock %}
 

@@ -25,9 +25,9 @@
 #
 
 from django.contrib import admin
-from django.db.models.loading import cache
+from django.apps import apps
 
 class EmailChangeRequestAdmin(admin.ModelAdmin):
     raw_id_fields = ('user',)
 
-admin.site.register(cache.get_model('email_change', 'EmailChangeRequest'), EmailChangeRequestAdmin)
+admin.site.register(apps.get_model('email_change', 'EmailChangeRequest'), EmailChangeRequestAdmin)

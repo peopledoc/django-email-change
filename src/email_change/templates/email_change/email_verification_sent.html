@@ -17,7 +17,7 @@
     <div id="content-main">
         <p>{% trans "An email containing a verification link has been sent to your new email address." %}</p>
         <p>{% trans "Follow the instructions in this email in order to successfully change your current email address." %}</p>
-        <p>&laquo; <a href="{% url profiles_profile_detail user.username %}">{% trans "Back to your profile" %}</a></p>
+        <p>&laquo; <a href="{% url 'profiles_profile_detail' user.username %}">{% trans "Back to your profile" %}</a></p>
     </div>
 {% endblock %}
 

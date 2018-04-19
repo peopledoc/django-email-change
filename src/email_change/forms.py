@@ -25,8 +25,7 @@
 #
 
 from django import forms
-from django.db.models.loading import cache
-
+from django.contrib.auth import get_user_model
 
 class EmailChangeForm(forms.Form):
     email = forms.EmailField(label='New E-mail', max_length=75)
@@ -50,7 +49,7 @@ class EmailChangeForm(forms.Form):
         """
         email = self.cleaned_data.get('email')
 
-        User = cache.get_model('auth', 'User')
+        User = get_user_model()
         user = User.objects.get(username__exact=self.username)
 
         # Check if the new email address differs from the current

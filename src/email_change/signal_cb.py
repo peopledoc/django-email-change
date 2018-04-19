@@ -24,8 +24,6 @@
 #  limitations under the License.
 #
 
-from django.db.models.loading import cache
-
 
 def signal_callback(sender, **kwargs):
     instance = kwargs['instance']   # app_label.ModelName instance
