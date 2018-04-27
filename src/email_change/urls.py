@@ -26,10 +26,11 @@
 
 from django.conf.urls import url
 from django.views.generic import TemplateView
+from .views import email_change_view, email_verify_view
 
 
 urlpatterns = [
-    url(r'^email/change/$', 'email_change.views.email_change_view', name='email_change'),
+    url(r'^email/change/$', email_change_view, name='email_change'),
     url(r'^email/verification/sent/$',
         TemplateView.as_view(template_name='email_change/email_verification_sent.html'),
         name='email_verification_sent'),
@@ -38,7 +39,7 @@ urlpatterns = [
     # [a-fA-F0-9]{40} because a bad verification key should still get to the view;
     # that way it can return a sensible "invalid key" message instead of a
     # confusing 404.
-    url(r'^email/verify/(?P<verification_key>\w+)/$', 'email_change.views.email_verify_view', name='email_verify'),
+    url(r'^email/verify/(?P<verification_key>\w+)/$', email_verify_view, name='email_verify'),
     url(r'^email/change/complete/$',
         TemplateView.as_view(template_name='email_change/email_change_complete.html'),
         name='email_change_complete'),
