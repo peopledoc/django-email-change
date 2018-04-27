@@ -24,14 +24,11 @@
 #  limitations under the License.
 #
 
-try:
-    from django.conf.urls.defaults import *
-except ImportError:
-    from django.conf.urls import patterns, url
+from django.conf.urls import url
 from django.views.generic import TemplateView
 
 
-urlpatterns = patterns('',
+urlpatterns = [
     url(r'^email/change/$', 'email_change.views.email_change_view', name='email_change'),
     url(r'^email/verification/sent/$',
         TemplateView.as_view(template_name='email_change/email_verification_sent.html'),
@@ -45,4 +42,4 @@ urlpatterns = patterns('',
     url(r'^email/change/complete/$',
         TemplateView.as_view(template_name='email_change/email_change_complete.html'),
         name='email_change_complete'),
-)
+]
