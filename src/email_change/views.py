@@ -28,7 +28,7 @@ from django.apps import apps
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response, redirect
-from django.template import RequestContext, Context
+from django.template import RequestContext
 from django.template.loader import render_to_string
 from django.core.mail import send_mail
 
@@ -94,13 +94,10 @@ def email_change_view(request, extra_context={},
                 'protocol': protocol,
             }
             c.update(extra_context)
-            context = Context(c)
 
             # Send success email
-            subject = render_to_string(email_subject_template_name,
-                                       context_instance=context).strip()
-            message = render_to_string(email_message_template_name,
-                                       context_instance=context)
+            subject = render_to_string(email_subject_template_name, c).strip()
+            message = render_to_string(email_message_template_name, c)
 
             send_mail(subject, message, None, [email])
 
