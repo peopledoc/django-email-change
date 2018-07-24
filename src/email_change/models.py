@@ -29,7 +29,7 @@ from datetime import timedelta
 from django.conf import settings
 from django.db import models
 from django.utils.timezone import now
-from django.core.urlresolvers import reverse_lazy as reverse
+from django.urls import reverse_lazy as reverse
 
 from django.conf import settings
 
@@ -38,7 +38,7 @@ EMAIL_CHANGE_VERIFICATION_DAYS = getattr(settings, 'EMAIL_CHANGE_VERIFICATION_DA
 
 
 class EmailChangeRequest(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL,  related_name='%(class)s_user')
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='%(class)s_user')
     verification_key = models.CharField(max_length=40)
     email = models.EmailField(max_length=75)  # Contains the new email address
     date_created = models.DateTimeField(auto_now_add=True)
