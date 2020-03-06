@@ -1,5 +1,8 @@
 Changelog
 =========
+0.7 (March 2020)
+----------------
+* patch up for py 3 and dj 1.11
 
 0.6 (unreleased)
 ----------------
