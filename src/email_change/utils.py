@@ -40,5 +40,5 @@ def generate_key(user, email):
     
     """
     return hashlib.sha1(
-        default_token_generator.make_token(user) + email + str(random.random())
+        default_token_generator.make_token(user) + bytes(email, 'utf-8') + random.random()
     ).hexdigest()
