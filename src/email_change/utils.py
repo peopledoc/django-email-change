@@ -39,6 +39,7 @@ def generate_key(user, email):
         The new email address
     
     """
-    return hashlib.sha1(
-        default_token_generator.make_token(user) + bytes(email, 'utf-8') + random.random()
-    ).hexdigest()
+    return hashlib.sha1(bytes(
+        default_token_generator.make_token(user) + email + str(random.random()),
+        'utf-8',
+    )).hexdigest()
